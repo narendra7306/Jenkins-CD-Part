@@ -6,6 +6,6 @@ namespace: jenkins-cd
 commonLabels:
   jenkins: cd
 resources:
-  - deployment.yaml
-  - service.yaml
+  - yamls/deployment.yaml
+  - yamls/service.yaml
   

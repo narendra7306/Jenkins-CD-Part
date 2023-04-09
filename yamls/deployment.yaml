@@ -23,4 +23,4 @@ spec:
         command: ["/bin/sh"]
         args: ["-c", "while true; do sleep 600; done;"]
         ports:
-        - containerPort: 80
+        - containerPort: 8080
