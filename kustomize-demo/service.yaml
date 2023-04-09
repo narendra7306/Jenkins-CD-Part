@@ -1,19 +1,15 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: sr-svc
-  namespace: sr-ns
+  name: java-app-svc
+  namespace: jenkins-cd
   labels:
-    env: poc
+    jenkins: cd
 spec:
   type: NodePort
   selector:
-    env: poc
+    jenkins: cd
   ports:  
     - port: 5000
       targetPort: 80
       nodePort: 32000
-
-
-
-
