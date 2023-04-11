@@ -19,7 +19,7 @@ spec:
         - name: cd-secret
       containers:
       - name: java-c1
-        image: zentech.jfrog.io/docker/java-app:28
+        image: zentech.jfrog.io/docker/java-app:29
         command: ["/bin/sh"]
         args: ["-c", "while true; do sleep 600; done;"]
         ports:
